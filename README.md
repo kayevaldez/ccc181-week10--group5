@@ -23,15 +23,15 @@ npm run build        # must finish with no errors before you submit
 
 | Item | Your answer |
 | --- | --- |
-| Group number | 5 |
+| Group number | 4 |
 | Section | IT3-A |
-| Repository URL | |
+| Repository URL | https://github.com/kayevaldez/ccc181-week10--group5 |
 
 ## Members (each member fills in their own row in their own commit)
 
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
-| 1 (leader) | Kaye Valdez | kayevaldez | `base.css` | Added the viewport meta tag in index.html. Wrote base.css: phone layout, container, and brand panel with Grid and rem, plus 768px, 1024px, and 1280px rules. |
+| 1 (leader) | Sam Dadole | samdadole-max | `base.css` | Added the viewport meta tag in index.html. Wrote base.css: phone layout, container, and brand panel with Grid and rem, plus 768px, 1024px, and 1280px rules. |
 | 2 | | | `nav.css` | |
 | 3 | | | `form.css` | |    
 
