@@ -73,4 +73,4 @@ Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png
 
 ## What our group learned (leader writes this last)
 
-> (write your answer here)
+> (The group applied mobile-first web development principles to style the CampusConnect login page, leveraging relative units, CSS Grid, Flexbox, and min-width media queries at 360px, 768px, 1024px, and 1280px to build a responsive layout. Beyond layout design, the activity emphasized key accessibility and usability practices, such as optimizing touch targets, ensuring readable inputs, testing focus states, and verifying form interactions to prevent horizontal scrolling. Finally, the team reinforced best collaboration practices by managing feature branches, conducting pull request reviews, maintaining clear README documentation, and validating the final submission through error-free npm run build checks.)
