@@ -33,7 +33,7 @@ npm run build        # must finish with no errors before you submit
 | --- | --- | --- | --- | --- |
 | 1 (leader) | Sam Dadole | samdadole-max | `base.css` | Added the viewport meta tag in index.html. Wrote base.css: phone layout, container, and brand panel with Grid and rem, plus 768px, 1024px, and 1280px rules. |
 | 2 | Kaye Valdez | kayevaldez | `nav.css` | Wrote nav.css: phone navbar with brand on top and stacked 48px links, and footer in 1 column. Used Flexbox for the navbar (brand left and links in one row with flex-direction: row from 768px) and Grid for the footer (3 columns from 1024px). |
-| 3 | | | `form.css` | |    
+| 3 | Faith Alexa Jabien | faith alexa jabien | form.css | Wrote form.css with Flexbox: phone layout with stacked full-width fields, checkbox row, link and buttons, 48px tall inputs with 16px text, and the Show/Hide button beside the password input. At 768px, the checkbox and "Forgot password?" sit side by side, the two bottom buttons sit side by side, and the card gets max-width: 32rem, centered. At 1024px, the card padding becomes 2.5rem. |  
 
 ## Experiment 0: the page without the viewport tag
 
