@@ -33,14 +33,20 @@ npm run build        # must finish with no errors before you submit
 | --- | --- | --- | --- | --- |
 | 1 (leader) | Sam Dadole | samdadole-max | `base.css` | Added the viewport meta tag in index.html. Wrote base.css: phone layout, container, and brand panel with Grid and rem, plus 768px, 1024px, and 1280px rules. |
 | 2 | Kaye Valdez | kayevaldez | `nav.css` | Wrote nav.css: phone navbar with brand on top and stacked 48px links, and footer in 1 column. Used Flexbox for the navbar (brand left and links in one row with flex-direction: row from 768px) and Grid for the footer (3 columns from 1024px). |
-| 3 | | | `form.css` | |    
+| 3 | Faith Alexa Jabien | faith alexa jabien | form.css | Wrote form.css with Flexbox: phone layout with stacked full-width fields, checkbox row, link and buttons, 48px tall inputs with 16px text, and the Show/Hide button beside the password input. At 768px, the checkbox and "Forgot password?" sit side by side, the two bottom buttons sit side by side, and the card gets max-width: 32rem, centered. At 1024px, the card padding becomes 2.5rem. |  
 
 ## Experiment 0: the page without the viewport tag
 
 What did the page look like in DevTools phone mode **before** adding the viewport meta tag?
 What changed **after** adding it?
 
-> (write your answer here)
+> (
+Before adding the viewport meta tag, the browser assumed a standard desktop screen width (around 980px) and forcibly zoomed out the page to make the entire layout fit within the small mobile screen width. Because of this artificial zoom-out effect, all text, inputs, buttons, and layout elements appeared microscopic, compressed, and completely unreadable without manually pinching and zooming in.
+
+Adding the viewport meta tag (`<meta name="viewport" content="width=device-width, initial-scale=1.0">`) instructed the browser to match the layout viewport width directly to the physical device's screen width (e.g., 360px). As a result:
+1. Text, inputs, and touch targets scaled up to human-readable size at a 1:1 pixel scale without manual zooming.
+2. Mobile-first CSS rules and media queries evaluated against the actual screen width rather than the simulated desktop width.
+3. Horizontal overflow was eliminated, allowing the mobile layout to stack smoothly in a single column.)
 
 ## DevTools test results
 
@@ -67,4 +73,4 @@ Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png
 
 ## What our group learned (leader writes this last)
 
-> (write your answer here)
+> (The group applied mobile-first web development principles to style the CampusConnect login page, leveraging relative units, CSS Grid, Flexbox, and min-width media queries at 360px, 768px, 1024px, and 1280px to build a responsive layout. Beyond layout design, the activity emphasized key accessibility and usability practices, such as optimizing touch targets, ensuring readable inputs, testing focus states, and verifying form interactions to prevent horizontal scrolling. Finally, the team reinforced best collaboration practices by managing feature branches, conducting pull request reviews, maintaining clear README documentation, and validating the final submission through error-free npm run build checks.)
