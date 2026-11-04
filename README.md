@@ -55,7 +55,13 @@ What changed **after** adding it?
 
 Using **Show media queries** and dragging slowly from 360 px to 1280 px, the layout changed at these exact widths:
 
-> (write the widths here, and say whether any width looked broken)
+> (Using Show media queries and dragging slowly from 360 px to 1280 px, the layout changed at these exact widths:
+- **360 px:** Starting layout (no breakpoint here). Nav links stacked in one column. Checkbox and "Forgot password?" stacked. The two bottom buttons stacked. Brand panel above the login card. Footer in 1 column.
+- **768 px:** Nav changed to one row. Checkbox and "Forgot password?" moved side by side. The two bottom buttons moved side by side.
+- **1024 px:** Brand panel and login card moved side by side. Footer changed to 3 columns. Heading grew larger and the extra list appeared.
+- **1280 px:** Container stopped at 1200px and became centered.
+
+No width looked broken, and no sideways scrollbar appeared, including when the error messages showed.)
 
 Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png`.
 
