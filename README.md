@@ -32,7 +32,7 @@ npm run build        # must finish with no errors before you submit
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
 | 1 (leader) | Sam Dadole | samdadole-max | `base.css` | Added the viewport meta tag in index.html. Wrote base.css: phone layout, container, and brand panel with Grid and rem, plus 768px, 1024px, and 1280px rules. |
-| 2 | | | `nav.css` | |
+| 2 | Kaye Valdez | kayevaldez | `nav.css` | Wrote nav.css: phone navbar with brand on top and stacked 48px links, and footer in 1 column. Used Flexbox for the navbar (brand left and links in one row with flex-direction: row from 768px) and Grid for the footer (3 columns from 1024px). |
 | 3 | | | `form.css` | |    
 
 ## Experiment 0: the page without the viewport tag
@@ -55,7 +55,13 @@ What changed **after** adding it?
 
 Using **Show media queries** and dragging slowly from 360 px to 1280 px, the layout changed at these exact widths:
 
-> (write the widths here, and say whether any width looked broken)
+> (Using Show media queries and dragging slowly from 360 px to 1280 px, the layout changed at these exact widths:
+- **360 px:** Starting layout (no breakpoint here). Nav links stacked in one column. Checkbox and "Forgot password?" stacked. The two bottom buttons stacked. Brand panel above the login card. Footer in 1 column.
+- **768 px:** Nav changed to one row. Checkbox and "Forgot password?" moved side by side. The two bottom buttons moved side by side.
+- **1024 px:** Brand panel and login card moved side by side. Footer changed to 3 columns. Heading grew larger and the extra list appeared.
+- **1280 px:** Container stopped at 1200px and became centered.
+
+No width looked broken, and no sideways scrollbar appeared, including when the error messages showed.)
 
 Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png`.
 
