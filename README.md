@@ -32,7 +32,7 @@ npm run build        # must finish with no errors before you submit
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
 | 1 (leader) | Sam Dadole | samdadole-max | `base.css` | Added the viewport meta tag in index.html. Wrote base.css: phone layout, container, and brand panel with Grid and rem, plus 768px, 1024px, and 1280px rules. |
-| 2 | | | `nav.css` | |
+| 2 | Kaye Valdez | kayevaldez | `nav.css` | Wrote nav.css: phone navbar with brand on top and stacked 48px links, and footer in 1 column. Used Flexbox for the navbar (brand left and links in one row with flex-direction: row from 768px) and Grid for the footer (3 columns from 1024px). |
 | 3 | | | `form.css` | |    
 
 ## Experiment 0: the page without the viewport tag
