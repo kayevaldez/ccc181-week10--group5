@@ -101,7 +101,6 @@
   width: 100%;
 }
 
-/* Stack form fields and controls */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -109,16 +108,14 @@
   margin-bottom: 1rem;
 }
 
-/* Base input styling */
 .form-input,
 .btn {
   width: 100%;
-  min-height: 48px; /* Target height >= 48px */
+  min-height: 48px;
   padding: 0.75rem 1rem;
   box-sizing: border-box;
 }
 
-/* Password input container with side-by-side show/hide button */
 .password-input-wrapper {
   display: flex;
   align-items: center;
@@ -136,7 +133,6 @@
   white-space: nowrap;
 }
 
-/* Checkbox and Forgot Password stacked on mobile */
 .form-options {
   display: flex;
   flex-direction: column;
@@ -148,11 +144,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  min-height: 48px; /* Tap target */
+  min-height: 48px;
   cursor: pointer;
 }
 
-/* Bottom action buttons stacked on mobile */
 .form-actions {
   display: flex;
   flex-direction: column;
@@ -163,7 +158,6 @@
   width: 100%;
 }
 
-/* State feedback: Hover and Focus-visible */
 .btn:hover,
 .checkbox-label:hover {
   opacity: 0.9;
@@ -175,26 +169,22 @@
   outline-offset: 2px;
 }
 
-
 /* --------------------------------------------------------------------------
    2. 768px and up (Tablet / Desktop)
    -------------------------------------------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Card centers with max-width */
   .login-card {
-    max-width: 32rem; /* 32rem = 512px / centered card target */
+    max-width: 32rem;
     margin: 0 auto;
   }
 
-  /* Checkbox & "Forgot password?" placed side by side */
   .form-options {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  /* Bottom two buttons placed side by side */
   .form-actions {
     flex-direction: row;
     gap: 1rem;
@@ -205,13 +195,11 @@
   }
 }
 
-
 /* --------------------------------------------------------------------------
    3. 1024px and up
    -------------------------------------------------------------------------- */
 
 @media (min-width: 1024px) {
-  /* Increase card interior padding */
   .login-card {
     padding: 2.5rem;
   }
