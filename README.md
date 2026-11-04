@@ -23,17 +23,17 @@ npm run build        # must finish with no errors before you submit
 
 | Item | Your answer |
 | --- | --- |
-| Group number | |
-| Section | |
+| Group number | 5 |
+| Section | IT3-A |
 | Repository URL | |
 
 ## Members (each member fills in their own row in their own commit)
 
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
-| 1 (leader) | | | `base.css` | |
+| 1 (leader) | Kaye Valdez | kayevaldez | `base.css` | Added the viewport meta tag in index.html. Wrote base.css: phone layout, container, and brand panel with Grid and rem, plus 768px, 1024px, and 1280px rules. |
 | 2 | | | `nav.css` | |
-| 3 | | | `form.css` | |
+| 3 | | | `form.css` | |    
 
 ## Experiment 0: the page without the viewport tag
 
