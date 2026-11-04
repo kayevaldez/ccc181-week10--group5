@@ -40,7 +40,13 @@ npm run build        # must finish with no errors before you submit
 What did the page look like in DevTools phone mode **before** adding the viewport meta tag?
 What changed **after** adding it?
 
-> (write your answer here)
+> (
+Before adding the viewport meta tag, the browser assumed a standard desktop screen width (around 980px) and forcibly zoomed out the page to make the entire layout fit within the small mobile screen width. Because of this artificial zoom-out effect, all text, inputs, buttons, and layout elements appeared microscopic, compressed, and completely unreadable without manually pinching and zooming in.
+
+Adding the viewport meta tag (`<meta name="viewport" content="width=device-width, initial-scale=1.0">`) instructed the browser to match the layout viewport width directly to the physical device's screen width (e.g., 360px). As a result:
+1. Text, inputs, and touch targets scaled up to human-readable size at a 1:1 pixel scale without manual zooming.
+2. Mobile-first CSS rules and media queries evaluated against the actual screen width rather than the simulated desktop width.
+3. Horizontal overflow was eliminated, allowing the mobile layout to stack smoothly in a single column.)
 
 ## DevTools test results
 
