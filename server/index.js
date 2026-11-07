@@ -3,7 +3,9 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const sessionsRouter = require('./routes/sessions');
-// MEMBER 2 adds the require lines for usersRouter, notFound and errorHandler here.
+
+const usersRouter = require('./routes/users');
+const { notFound, errorHandler } = require('./errors');
 
 if (!process.env.JWT_SECRET) {
   console.error('JWT_SECRET is missing. Create server/.env from server/.env.example.');
@@ -24,7 +26,9 @@ app.get('/api/v1/health', (req, res) => {
 
 app.use('/api/v1/sessions', sessionsRouter);
 
-// MEMBER 2 adds the usersRouter, notFound and errorHandler lines here (after all routes).
+app.use('/api/v1/users', usersRouter);
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`API running on http://localhost:${PORT}`);
