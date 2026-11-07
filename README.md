@@ -74,3 +74,42 @@ Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png
 ## What our group learned (leader writes this last)
 
 > (The group applied mobile-first web development principles to style the CampusConnect login page, leveraging relative units, CSS Grid, Flexbox, and min-width media queries at 360px, 768px, 1024px, and 1280px to build a responsive layout. Beyond layout design, the activity emphasized key accessibility and usability practices, such as optimizing touch targets, ensuring readable inputs, testing focus states, and verifying form interactions to prevent horizontal scrolling. Finally, the team reinforced best collaboration practices by managing feature branches, conducting pull request reviews, maintaining clear README documentation, and validating the final submission through error-free npm run build checks.)
+
+## Part 2: How to run
+
+**Terminal 1: the backend**
+cd server
+npm install
+copy .env.example .env      (Mac/Linux: cp .env.example .env)
+npm start
+
+Edit `server/.env` first. It must show: `API running on http://localhost:3000`.
+
+**Terminal 2: the front end (project root)**
+npm install
+copy .env.example .env      (Mac/Linux: cp .env.example .env)
+npm run dev
+
+Open `http://localhost:5173`.
+
+Demo account: `student@campusconnect.test` / `Campus26`
+
+Two settings files (never commit `.env`):
+- `server/.env.example`: `PORT`, `JWT_SECRET`, `CLIENT_ORIGIN`
+- `.env.example` (root): `VITE_API_URL`
+
+## API summary
+
+| Method | Endpoint | Success | Errors |
+| --- | --- | --- | --- |
+| GET | `/api/v1/health` | 200 | none |
+| POST | `/api/v1/sessions` | 200 | 400, 401 |
+| GET | `/api/v1/users/me` | 200 | 401 |
+
+Full details: [docs/API-SPEC.md](docs/API-SPEC.md)
+
+## Who did what in Part 2
+
+| Member | Name | GitHub username | What I did in Part 2 |
+| --- | --- | --- | --- |
+| 1 | Sam Dadole | samdadole-max | Set up `server/` with Express, `.env`, CORS and JSON. Built `POST /api/v1/sessions` with validation, bcryptjs, a 1-hour token, and the demo user. |
