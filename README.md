@@ -113,5 +113,5 @@ Full details: [docs/API-SPEC.md](docs/API-SPEC.md)
 | Member | Name | GitHub username | What I did in Part 2 |
 | --- | --- | --- | --- |
 | 1 | Sam Dadole | samdadole-max | Set up `server/` with Express, `.env`, CORS and JSON. Built `POST /api/v1/sessions` with validation, bcryptjs, a 1-hour token, and the demo user. |
-
+| 2 | Kaye Valdez | kayevaldez | Built `GET /api/v1/users/me` with the token middleware, the 404 and 500 handlers, `docs/API-SPEC.md` with the events design, the Postman collection, and the Postman screenshots. |
 | 3 | Faith Alexa Jabien | faithalexajabien-oss | Made the root `.env.example`, `src/api/auth.ts` (API calls, and console logs of requests, responses and errors), the login form with loading, success and error states, the Welcome screen with refresh and Log out, and `src/styles/auth.css`. |
